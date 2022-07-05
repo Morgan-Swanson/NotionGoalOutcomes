@@ -22,11 +22,11 @@ First, you need to update your data model in the objective database.
 Required Objective Properties:
 * Name (text),
 * Status (status), <- indicate that the objective is 'Underway' if you'd like it to be updated by the script
-* Tracker (text), <- name of field used to calculate metrics in tracker db
+* Tracker (text), <- name of Property in Daily Tracker DB
 * Metric (text), <- how to aggregate data (current options are 'Count', 'Sum', & 'Count Greater Than'
-* Argument (number), <- necessary for the 'Count Greater Than' feature,
+* Argument (number), <- necessary for the 'Count Greater Than' feature to work
 * Last Update (date), <- necessary to track when the script has changed the progress
-* Completed (number), <- this is where the key metric is stored after it's calculated,
+* Completed (number), <- this is where the key metric is stored after it's calculated
 * End Date (date), <- necessary to window the daily tracking for only when that objective is active
 
 
