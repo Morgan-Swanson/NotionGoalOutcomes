@@ -17,10 +17,8 @@ def get_tracking(tracking_db):
     entries = [line['properties'] for line in tracking_db['results']]
     # 2. Pull out data
     records = [{p: parse_prop(e[p]) for p in e} for e in entries]
-    print(records)
     # 3. Drop columns that we can't parse yet
-    records = [{k: v for k, v in r.items() if v is not None} for r in records]
-    print(records)
+    records = [{k: v for k, v in r.items() if v is not None} for r in records])
     # 4. Construct DataFrame
     df = pd.DataFrame.from_records(records, index='Date')
     df.index = pd.to_datetime(df.index)
