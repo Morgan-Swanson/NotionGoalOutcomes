@@ -8,6 +8,7 @@ As a Notion user, I want to track key metrics to montior progress towards my goa
 
 ### Example
 Goal Outcome: "Have at daily score of more than 3/5 in emotional wellbeing for 60 days this quarter"
+
 Daily Tracking: Wellbeing (number 1-5)
 
 ## Strategy
